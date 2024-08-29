@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "URL của repository trên GitHub hoặc git server khác"
+  },
   "engines": {
     "node": "18.x"
   },
