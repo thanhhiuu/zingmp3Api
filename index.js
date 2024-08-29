@@ -22,6 +22,7 @@ const corsOptions = {
       callback(new Error('Not allowed by CORS'));
     }
   },
+  credentials: true, // Thêm nếu cần xử lý cookie và các header đặc biệt
 };
 
 // Middleware để xử lý yêu cầu đến Zing MP3 API
@@ -29,7 +30,7 @@ const zingMp3Proxy = async (req, res, next) => {
   if (req.path.startsWith('/song')) {
     try {
       const zingApiUrl =
-        'https://zingmp3.vn/api/v2/song/get/streaming' +
+        'https://zingmp3api-qwgj.onrender.com/api' +
         req.url.slice('/song'.length);
       const response = await axios.get(zingApiUrl, {
         headers: {
