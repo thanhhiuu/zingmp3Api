@@ -30,7 +30,7 @@ const zingMp3Proxy = async (req, res, next) => {
     try {
       const zingApiUrl =
         'https://zingmp3.vn/api/v2/song/get/streaming' +
-        req.url.slice('/api/song'.length);
+        req.url.slice('/song'.length);
       const response = await axios.get(zingApiUrl, {
         headers: {
           'User-Agent':
