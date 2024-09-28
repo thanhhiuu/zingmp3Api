@@ -4,7 +4,7 @@ require('dotenv').config();
 const app = express();
 const cors = require('cors');
 const axios = require('axios');
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 
 // Cấu hình các nguồn được phép
 const allowedOrigins = [
