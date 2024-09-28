@@ -11,7 +11,9 @@
     "node": "18.x"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "build": "nodemon index.js",
+    "start": "nodemon index.js",
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
